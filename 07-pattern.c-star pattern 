@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int n, i, j;
+    
+    printf("Kitne rows ka pattern chahiye? ");
+    scanf("%d", &n);
+    
+    printf("\nPattern 1: Right Triangle ⭐\n");
+    for(i = 1; i <= n; i++) {
+        for(j = 1; j <= i; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    
+    printf("\nPattern 2: Inverted Triangle 🔻\n");
+    for(i = n; i >= 1; i--) {
+        for(j = 1; j <= i; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
